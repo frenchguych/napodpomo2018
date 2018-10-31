@@ -1,0 +1,47 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+	 xmlns:georss="http://www.georss.org/georss"
+	 xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+>
+	<channel>
+		<title>NaPodPoMo 2018</title>
+		<atom:link href="https://feeds.frenchguy.ch/napodpomo2018" rel="self" type="application/rss+xml"/>
+		<link>https://frenchguy.ch/</link>
+		<description>NaPodPoMo 2018 series</description>
+		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+		<language>fr-FR</language>
+		<copyright>Released under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</copyright>
+		<itunes:subtitle>30 episodes in 30 days</itunes:subtitle>
+		<itunes:author>Yannick Mauray</itunes:author>
+		<googleplay:author>Yannick Mauray</googleplay:author>
+		<googleplay:email>yannick@frenchguy.ch</googleplay:email>
+		<itunes:summary>NaPodPoMo is a month long event along the same vein as National Novel Writing Month aka NaNoWriMo. The difference? Well, instead of writing a 50,000 word novel, you podcast every day for 30 days from November 1st-30th.</itunes:summary>
+		<googleplay:description>NaPodPoMo is a month long event along the same vein as National Novel Writing Month aka NaNoWriMo. The difference? Well, instead of writing a 50,000 word novel, you podcast every day for 30 days from November 1st-30th.</googleplay:description>
+		<itunes:owner>
+			<itunes:name>Yannick Mauray</itunes:name>
+			<itunes:email>yannick@frenchguy.ch</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>clean</itunes:explicit>
+		<googleplay:explicit>No</googleplay:explicit>
+		<itunes:image href="https://images.frenchguy.ch/napodpomo2018/cover.png"></itunes:image>
+		<googleplay:image href="https://images.frenchguy.ch/napodpomo2018/cover.png"></googleplay:image>
+		<image>
+			<url>https://images.frenchguy.ch/napodpomo2018/cover.png</url>
+			<title>napodpomo 2018</title>
+			<link>https://frenchguy.ch/</link>
+		</image>
+		<itunes:category text="Music"></itunes:category>
+		<generator>https://jekyllrb.com</generator>
+		
+	</channel>
+</rss>
