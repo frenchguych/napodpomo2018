@@ -42,6 +42,29 @@
 		</image>
 		<itunes:category text="Music"></itunes:category>
 		<generator>https://jekyllrb.com</generator>
-		
+		{% for post in site.posts %}
+		<item>
+			<title>{{ post.title }}</title>
+			<link>{{ post.url | prepend: site.url }}</link>
+			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+			<dc:creator>Yannick Mauray</dc:creator>
+			<guid isPermaLink="true">{{ post.id }}</guid>
+			<description><![CDATA[{{ post.description }}]]></description>
+			<itunes:subtitle><![CDATA[{{ post.description }}]]></itunes:subtitle>
+			<itunes:keywords>{{ post.tags }}</itunes:keywords>
+			<content:encoded><![CDATA[{{ post.excerpt | strip_html }}]]></content:encoded>
+			<itunes:summary><![CDATA[{{ post.excerpt | strip_html }}]]></itunes:summary>
+			<googleplay:description><![CDATA[{{ post.excerpt | strip_html }}]]></googleplay:description>
+			<itunes:image href="{{ post.image }}"></itunes:image>
+			<googleplay:image href="{{ post.image }}"></googleplay:image>
+			<enclosure url="{{ post.mp3 }}" length="{{ post.mp3_size | default: 1}}" type="audio/mpeg"></enclosure>
+			<itunes:explicit>{{ post.explicit | default: 'no' }}</itunes:explicit>
+			<googleplay:explicit>{{ post.explicit | default: 'no' }}</googleplay:explicit>
+			<itunes:block>{{ post.block | default: 'no' }}</itunes:block>
+			<googleplay:block>{{ post.block | default: 'no' }}</googleplay:block>
+			<itunes:duration>{{ post.mp3_duration | default: '0:00:00'}}</itunes:duration>
+			<itunes:author>Yannick Mauray</itunes:author>
+		</item>
+		{% endfor %}
 	</channel>
 </rss>

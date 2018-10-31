@@ -10,7 +10,10 @@ menu: episodes
 	</div>
 </div>
 {% for post in site.posts %}
-plop
+<article>
+	<header>{{ post.title }}</header>
+	<div>{{ post.content }}</div>
+</article>
 {% else %}
 <p>There is nothing here yet. Come back later to discover new content !</p>
 {% endfor %}
