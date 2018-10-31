@@ -26,10 +26,10 @@
 				<div class="col">
 					<div class="top-menu">
 						<ul class="items float-right list-inline">
-							<li class="list-inline-item active"><a class="px-2 d-inline-block font-weight-bold" href="{{ site.url }}/">Home</a></li>
-							<li class="list-inline-item"><a class="px-2 d-inline-block font-weight-bold" href="{{ site.url }}/episodes">Episodes</a></li>
-							<li class="list-inline-item"><a class="px-2 d-inline-block font-weight-bold" href="{{ site.url }}/about">About</a></li>
-							<li class="list-inline-item"><a class="px-2 d-inline-block font-weight-bold" href="{{ site.url }}/contact">Contact</a></li>
+							<li class="list-inline-item{% if page.permalink == '/' %} active{% endif %}"><a class="px-2 d-inline-block font-weight-bold" href="{{ site.url }}/">Home</a></li>
+							<li class="list-inline-item{% if page.permalink == '/episodes' %} active{% endif %}"><a class="px-2 d-inline-block font-weight-bold" href="{{ site.url }}/episodes">Episodes</a></li>
+							<li class="list-inline-item{% if page.permalink == '/about' %} active{% endif %}"><a class="px-2 d-inline-block font-weight-bold" href="{{ site.url }}/about">About</a></li>
+							<li class="list-inline-item{% if page.permalink == '/contact' %} active{% endif %}"><a class="px-2 d-inline-block font-weight-bold" href="{{ site.url }}/contact">Contact</a></li>
 						</ul>
 					</div>
 				</div>
