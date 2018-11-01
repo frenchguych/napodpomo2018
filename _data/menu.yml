@@ -1,0 +1,9 @@
+items:
+- title: Home
+  permalink: /
+- title: Episodes
+  permalink: /episodes
+- title: About
+  permalink: /about
+- title: Contact
+  permalink: /contact

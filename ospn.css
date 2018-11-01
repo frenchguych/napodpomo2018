@@ -1,0 +1,101 @@
+#otherside-network-banner {
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 28px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  background-color: #222;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 3px;
+  margin-right: 10px;
+  border-top: solid #cc0000 2px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  #otherside-network-banner {
+    flex-direction: row;
+  }
+}
+#otherside-network-banner a {
+  text-decoration: none;
+  color: inherit;
+}
+@media screen and (min-width: 480px) {
+  #otherside-network-banner .otherside-network-toggle {
+    display: none;
+  }
+}
+#otherside-network-banner.otherside-network-closed .otherside-network-banner-dropdown {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  #otherside-network-banner.otherside-network-closed .otherside-network-banner-dropdown {
+    display: inline-block;
+    cursor: pointer;
+  }
+  #otherside-network-banner.otherside-network-closed .otherside-network-banner-dropdown:hover {
+    background-color: #cc0000;
+    transition-property: background-color;
+    transition-duration: .2s;
+  }
+  #otherside-network-banner.otherside-network-closed .otherside-network-banner-dropdown:hover .otherside-network-banner-category {
+    display: block;
+    background-color: #222222;
+    position: absolute;
+    left: 0;
+    top: 28px;
+    min-width: 130px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  #otherside-network-banner.otherside-network-closed .otherside-network-banner-dropdown:hover .otherside-network-banner-category p:hover {
+    background-color: #cc0000;
+    transition-property: background-color;
+    transition-duration: .2s;
+  }
+}
+#otherside-network-banner .otherside-network-banner-dropdown {
+  line-height: 1em;
+  padding-top: 1em;
+}
+@media screen and (min-width: 480px) {
+  #otherside-network-banner .otherside-network-banner-dropdown {
+    position: relative;
+    line-height: 28px;
+    padding: 0;
+  }
+  #otherside-network-banner .otherside-network-banner-dropdown > span {
+    margin: 0 10px;
+  }
+}
+#otherside-network-banner .otherside-network-banner-category {
+  line-height: 1em;
+  padding-left: 1rem;
+}
+#otherside-network-banner .otherside-network-banner-category > p {
+  margin: 9px 0;
+}
+@media screen and (min-width: 480px) {
+  #otherside-network-banner .otherside-network-banner-category > p {
+    margin: 0;
+    padding: 0 10px;
+    line-height: 28px;
+    font-size: inherit;
+  }
+}
+@media screen and (min-width: 480px) {
+  #otherside-network-banner .otherside-network-banner-category {
+    display: none;
+    padding-left: 0;
+  }
+}
+#otherside-network-banner .otherside-network-link::before {
+  content: "- ";
+}
+@media screen and (min-width: 480px) {
+  #otherside-network-banner .otherside-network-link::before {
+    content: "";
+  }
+}
